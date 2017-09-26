@@ -2,10 +2,10 @@
 このプログラムおよび画像はパブリックドメインです。  
 witten by Ryotaro SUMI  
   
->ruby main.rb  
+`ruby main.rb`  
 で実行
 
-# 変更点
+## 変更点
 ・体当たりすることで倒せるように変更  
 ・背景追加  
 ・画像変更  
