@@ -1,3 +1,5 @@
-# 松江高専Ruby講義課題５のベースプログラム
+# MCT Ruby講義 kadai５
 
 このプログラムおよび画像はパブリックドメインです。
+
+witten by Ryotaro SUMI
