@@ -1,19 +1,19 @@
 # coding: utf-8
 
 class Player < Sprite
-	attr_accessor :hp
+	attr_accessor :point
 
- 	def initialize( *arg )
- 		@hp = 5
+	def initialize( *arg )
+		@point = 0
 		super( *arg )
 	end
 
 	def update
-		self.x += Input.x
-		self.y += Input.y
+		self.x += 2*Input.x
+		self.y += 2*Input.y
 	end
 
 	def shot( obj )
-		@hp -= 1
+		@point += 1
 	end
 end

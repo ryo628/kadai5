@@ -18,26 +18,32 @@ enemy_img.setColorKey([0, 0, 0])
 back = Image.load("bg_outside_buildings.png")
 
 # font
-font = Font.new(16)
+font32 = Font.new(32)
+font64 = Font.new(64)
 
 # init player
 player = Player.new(400, 400, player_img)
 
 # init enemies
 enemies = []
-10.times do
- 	enemies << Enemy.new(rand(640), rand(480), enemy_img)
+20.times do
+	enemies << Enemy.new(rand(640), rand(480), enemy_img)
 end
 
 # main loop
 Window.loop do
+	# draw back image
+	Window.draw( 0, 0, back )
+
 	# quit for press ESC
- 	break if Input.keyPush?(K_ESCAPE)
+	break if Input.keyPush?(K_ESCAPE)
 
- 	# draw back image
- 	Window.draw( 0, 0, back )
+	# ending
+	if( player.point == 20 )
+		Window.draw_font( 50, 150, "game clear", font64 )
+	end
 
- 	# enemies
+	# enemies
 	Sprite.update(enemies)
 	Sprite.draw(enemies)
 
@@ -45,8 +51,8 @@ Window.loop do
 	player.update
 	player.draw
 
-	# shou hp
-	Window.draw_font( 10, 10, "HP : #{player.hp}", font )
+	# show point
+	Window.draw_font( 10, 10, "Point : #{player.point}", font32, { color: [ 0, 0, 0 ] } )
 
 	# 当たり判定
 	Sprite.check(player, enemies)
