@@ -1,9 +1,13 @@
 # MCT Ruby講義 kadai5
-
 このプログラムおよび画像はパブリックドメインです。  
-
 witten by Ryotaro SUMI  
+  
+>ruby main.rb  
+で実行
 
 # 変更点
-・hoge  
-・fuga  
+・体当たりすることで倒せるように変更  
+・背景追加  
+・画像変更  
+・スコア表示  
+・ゲーム終了処理の追加  
