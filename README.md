@@ -1,5 +1,5 @@
 # MCT Ruby講義 kadai5
-このプログラムおよび画像はパブリックドメインです。  
+このプログラムはパブリックドメインです。  
 witten by Ryotaro SUMI  
   
 `ruby main.rb`  
@@ -10,4 +10,8 @@ witten by Ryotaro SUMI
 ・背景追加  
 ・画像変更  
 ・スコア表示  
-・ゲーム終了処理の追加  
+・ゲーム終了処理の追加  
+  
+## 画像
+insert by [いらすとや][http://www.irasutoya.com/]  
+  
