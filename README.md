@@ -13,5 +13,5 @@ witten by Ryotaro SUMI
 ・ゲーム終了処理の追加  
   
 ## 画像
-insert by [いらすとや][http://www.irasutoya.com/]  
+insert by [いらすとや]:[http://www.irasutoya.com/]  
   
